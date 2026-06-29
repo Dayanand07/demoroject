@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Eligibility Checker</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f5f5f5;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:white;
+            padding:30px;
+            width:400px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:blue;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        h3{
+            text-align:center;
+            color:green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Voting Eligibility Checker</h2>
+
+<form method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Enter Name"
+required>
+
+<input
+type="number"
+name="age"
+placeholder="Enter Age"
+required>
+
+<input
+type="text"
+name="nationality"
+placeholder="Nationality"
+required>
+
+<button type="submit">
+Check Eligibility
+</button>
+
+</form>
+
+<h3>{{ result }}</h3>
+
+</div>
+
+</body>
+
+</html>
